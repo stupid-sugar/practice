@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+header {
+    width: 84%;
+    margin: 20px;
+}
+header .item {
+    font-size: 30px;
+    padding: 4px 8px;
+    border-bottom: 1px solid;
+}
+
+.box {
+    display: flex;
+    width: 84%;
+    margin: 0 auto;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.item:not(:first-child) {
+    opacity: 0.5;
+    margin-left: 10px;
+}
+
+.task_block {
+    height: 65vh;
+    overflow-y:auto;
+}
+
+.wrap {
+    width: 84%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 8px;
+    border: 1px solid;    
+}
+
+.task .todo_title, .task .todo_content, .task .user_info {
+    padding-left: 9px;
+}
+
+.task .todo_title {
+    border-bottom: dotted 1px currentColor;
+    margin-bottom: 16px;
+    padding-bottom: 9px;
+}
+
+.task .todo_content {
+    word-break: break-all;
+}
+
+.task:hover {
+    /*opacity: 0.5;*/
+    background-color:rgb(228 223 223 / 70%);
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+
+.task .user_info {
+    font-size: 14px;
+    border-top: 1px solid;
+    padding-top: 3px;
+}

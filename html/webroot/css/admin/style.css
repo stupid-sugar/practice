@@ -1,0 +1,56 @@
+/*
+main {
+    margin: 0 auto 2rem;
+}
+*/
+
+.break_all {
+    word-break: break-all;
+}
+
+.search table {
+    border-bottom: solid 1px;
+    margin-bottom: 20px;
+}
+.search td{
+    border-bottom: initial;
+}
+
+.sidebar {
+    min-width: 200px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    border: 1px solid;
+    margin-right: 10px;
+}
+
+.sidebar a {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid;
+    padding: 10px 10px;
+    cursor: pointer;
+    color: #606c76;
+}
+
+.sidebar a:first-child {
+    font-weight: 800;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    font-weight: 400;
+    color: black;
+}
+
+.action {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.action * {
+    margin-left: 10px;
+}

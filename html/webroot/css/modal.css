@@ -1,0 +1,31 @@
+.modal .msg {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid;
+}
+
+#login_modal .box, #regist_modal .box {
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid;
+    justify-content: space-around;    
+}
+
+#notify_modal .box {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#notify_modal .box a {
+    width:100%;
+    min-width: 150px;
+}

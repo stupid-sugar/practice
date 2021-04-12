@@ -1,0 +1,45 @@
+version: "3"
+
+services:
+  # PHP-Apache
+  myapp-web:
+    container_name: myapp-web
+    # ./myapp-web/Dockerfile でイメージをビルド
+    build:
+      context: ./myapp-web
+      dockerfile: Dockerfile
+    # myapp-db 起動後に myapp-web を起動
+    depends_on:
+      - myapp-db
+    # 80 番ポートを割り当て
+    ports:
+      - "80:80"
+    # ローカル の html フォルダを
+    # コンテナの /var/www/html にマウント
+    volumes:
+      - "../html:/var/www/html"
+     # - "../html/httpd.conf:/var/etc/apache2/httpd.conf"
+      - "../html/logs/access.log:/var/log/apache2/access.log"
+
+  # MySQL
+  myapp-db:
+    container_name: myapp-db
+    image: mysql:8.0
+    volumes:
+      - "./initdb:/docker-entrypoint-initdb.d" # inditdbフォルダのSQLを実行して初期化
+      #- "./mysql:/var/lib/mysql" # 永続化
+    # 環境変数をファイルで指定
+    env_file:
+      - env_file.env
+
+  # phpMyAdmin
+  myapp-pma:
+    container_name: myapp-pma
+    image: phpmyadmin/phpmyadmin:5.0
+    depends_on:
+      - myapp-db
+    ports:
+      - "8080:80"
+    # 環境変数をファイルで指定
+    env_file:
+      - env_file.env

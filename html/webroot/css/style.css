@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* font */
+body {
+    min-width: 300px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* sanitize */
+body, h1, h2, h3, h4, h5, h6, p, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav {
+    background-color: #e6a5a5;
+}
+
+.box {
+    display: flex;
+}
+
+.right {
+    text-align: right;
+}

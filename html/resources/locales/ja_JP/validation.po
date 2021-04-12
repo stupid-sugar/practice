@@ -1,0 +1,30 @@
+msgid "successAdd"
+msgstr "%sの追加に成功しました"
+
+msgid "failedAdd"
+msgstr "%sの追加に失敗しました"
+
+msgid "successEdit"
+msgstr "%sの編集に成功しました"
+
+msgid "failedEdit"
+msgstr "%sの編集に失敗しました"
+
+msgid "successDelete"
+msgstr "%sの削除に成功しました"
+
+msgid "failedDelete"
+msgstr "%sの削除に失敗しました"
+
+
+msgid "required"
+msgstr "%sは必ず入力してください"
+
+msgid "length"
+msgstr "%s文字以内で入力してください"
+
+msgid "unique"
+msgstr "この%sは既に登録されています"
+
+msgid "exist"
+msgstr "%sが存在しません"

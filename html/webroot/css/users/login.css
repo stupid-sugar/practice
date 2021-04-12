@@ -1,0 +1,17 @@
+.login_form {
+    justify-content: center;
+}
+
+.login_form .box {
+    width: 300px;
+    flex-direction: column;
+}
+
+.login_form h3 {
+    margin-bottom: 20px;
+}
+
+.login_form button {
+    width: 100%;
+    border-radius: 20px;
+}
