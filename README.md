@@ -61,12 +61,14 @@ myapp-db:
 - ToDoの管理
 - イイネの管理
 ## 補足
-- ログイン情報: username: test1, password: password
 - 管理者(/admin)とユーザーが存在
 - モーダルはtemplates/element/modalで管理
 - ユーザー側のCRUDはAjaxを使用
 - メッセージはvalidation.poで管理
 - 定数はconst/const.phpで管理
+###### ログイン情報
+- 一般: username: test1, password: password
+- 管理者: username: admin1, password: password
 ###### html/resources/locales/ja_JP/validation.po
 ```
 msgid "successAdd"
