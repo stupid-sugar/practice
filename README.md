@@ -69,13 +69,14 @@ myapp-db:
 ###### ログイン情報
 - 一般: username: test1, password: password
 - 管理者: username: admin1, password: password
-###### html/resources/locales/ja_JP/validation.po
+###### エラーメッセージの管理
 ```
+# html/resources/locales/ja_JP/validation.po
 msgid "successAdd"
 msgstr "%sの追加に成功しました"
 ```
-###### sample.php
 ```
+# sample.php
 $this->Flash->success(sprintf(__d('validation', 'successAdd'), 'タスク'));
 ```
 ## 今後の課題
